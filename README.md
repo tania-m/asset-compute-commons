@@ -1,5 +1,6 @@
 <!--- when a new release happens, the VERSION and URL in the badge have to be manually updated because it's a private registry --->
-[![npm version](https://img.shields.io/badge/%40nui%2Fasset--compute--commons-15.0.0-blue.svg)](https://artifactory.corp.adobe.com/artifactory/npm-nui-release/@nui/asset-compute-commons/-/@nui/asset-compute-commons-15.0.0.tgz)
+[![Version](https://img.shields.io/npm/v/@adobe/asset-compute-commons.svg)](https://npmjs.org/package/@adobe/asset-compute-commons)
+
 
 - [asset-compute-commons](#asset-compute-commons)
 	- [Installation](#installation)
@@ -242,7 +243,7 @@ Utilities for removing sensitive information from Asset Compute worker logs
 #### Examples
 Redacting access token from logs:
 ```js
-const { AssetComputeLogUtils } = require('@nui/asset-compute-commons');
+const { AssetComputeLogUtils } = require('@adobe/asset-compute-commons');
 
 params = {
 	accessToken: '123453467',
@@ -254,7 +255,7 @@ console.log("Asset Compute parameters:", AssetComputeLogUtils.redactUrl(params))
 
 Prints out exact same logs using `AssetComputeLogUtils.log` method:
 ```js
-const { AssetComputeLogUtils } = require('@nui/asset-compute-commons');
+const { AssetComputeLogUtils } = require('@adobe/asset-compute-commons');
 
 params = {
 	accessToken: '123453467',
